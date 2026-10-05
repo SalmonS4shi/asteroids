@@ -2,3 +2,5 @@
 #ignore log
 game_state.jsonl   
 game_events.jsonl 
+__pycache__
+.venv
