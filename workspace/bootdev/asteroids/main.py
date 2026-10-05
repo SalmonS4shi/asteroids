@@ -47,7 +47,7 @@ def main():
             for bullet in shots:
                 if CircleShape.collides_with(bullet,object):
                     log_event("asteroid_shot")
-                    object.kill()
+                    object.split()
                     bullet.kill()
 
         for thing in drawable:
