@@ -4,6 +4,7 @@ import constants
 import player
 import asteroid
 import asteroidfield
+import score
 from shot import Shot
 from circleshape import CircleShape
 from logger import log_event
@@ -41,6 +42,7 @@ def main():
             if CircleShape.collides_with(player1,object):
                 log_event("player_hit")
                 print("Game over!")
+                print(f"score = {score.count_score}")
                 sys.exit()
 
         for object in asteroids:
